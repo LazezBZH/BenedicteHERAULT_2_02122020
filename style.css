@@ -63,9 +63,20 @@ button {
 .filtres img {
   height: 1.5em;
   padding: 5px;
- border-style:none;
- border-radius: 360px;
- border-color:black;em;
- background-color: #DEEBFF;
- vertical-align: middle;
+  border-style: none;
+  border-radius: 360px;
+  border-color: black;
+  background-color: #deebff;
+  vertical-align: middle;
+}
+#header {
+  padding: 0 5em 0 5em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.chercher {
+  max-height: 1em;
+  max-width: 1em;
 }
