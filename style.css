@@ -1,16 +1,6 @@
 /*police raleway*/
-@font-face {
-  font-family: "ralewayregular";
-  src: url("raleway-regular-webfont.eot");
-  src: url("raleway-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("raleway-regular-webfont.woff") format("woff"),
-    url("raleway-regular-webfont.ttf") format("truetype"),
-    url("raleway-regular-webfont.svg#ralewayregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 * {
-  font-family: ralewayregular, Arial, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 h1 {
   font-size: 1.5em;
@@ -26,12 +16,14 @@ nav {
 }
 
 .entete ol {
+  min-width: 300px;
   list-style-type: none;
-  padding-left: 0;
+  display: inline-flex;
+  justify-content: space-around;
 }
 
 .entete {
-  display: inline-block;
+  display: flex;
 }
 /*filtres changent au survol, boutons arrondis, icone bleue sur fond bleu clair*/
 button {
@@ -59,8 +51,8 @@ button {
 .filtres:hover {
   background-color: rgb(153, 204, 170);
 }
-/*icones dans filtres*/
 .filtres img {
+  /*icones dans filtres*/
   height: 1.5em;
   padding: 5px;
   border-style: none;
@@ -75,8 +67,17 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .chercher {
-  max-height: 1em;
-  max-width: 1em;
+  max-width: 2.5%;
+}
+.rechercher {
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0 90px 90px 0;
+}
+/*pied de page*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 5em 1em 5em;
 }

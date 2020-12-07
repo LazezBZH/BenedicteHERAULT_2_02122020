@@ -1,0 +1,8 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 5em 1em 5em;
+}

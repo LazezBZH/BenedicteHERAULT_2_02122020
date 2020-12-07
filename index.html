@@ -6,6 +6,14 @@
     <meta name="description" content="Reservia" />
     <meta name="author" content="LazezBZH" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    </style>
   </head>
 
   <body>
@@ -15,6 +23,22 @@
         <p><img src="images/logo/logo.svg" alt="logo" /></p>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
+        <!--recherche-->
+
+        <div>
+          <img
+            src="/images/icones/map-marker-alt-solid.svg"
+            class="chercher"
+            alt="chercher"
+          />
+          <input
+            type="search"
+            id="recherche"
+            name="recherche"
+            placeholder="Marseille, France"
+          />
+          <button class="rechercher">Envoyer</button>
+        </div>
       </section>
       <nav class="entete">
         <!--haut et droite-->
@@ -27,7 +51,9 @@
 
       <!--bas du header, filtres non fonctionnels, filtres changent au survol-->
       <section>
-        <button><strong>Filtres</strong></button>
+        <button>
+          <p><strong>Filtres</strong></p>
+        </button>
         <button class="filtres">
           <span>
             <img
@@ -56,18 +82,30 @@
         </button>
       </section>
     </header>
-    <label for="site-search"
-      ><img
-        src="/images/icones/map-marker-alt-solid.svg"
-        class="chercher"
-        alt="search"
-    /></label>
-    <input
-      type="search"
-      id="site-search"
-      name="q"
-      aria-label="Search through site content"
-    />
-    <button>Rechercher</button>
+    <!--pied de page-->
+    <section class="footer">
+      <nav class="apropos">
+        <h4>À propos</h4>
+        <ol>
+          <li class="liens"><a href="fonctionnement.html">Hébergements</a></li>
+          <li class="liens"><a href="cgv.html">Activités</a></li>
+          <li class="liens"><a href="confidentialite.html">S'inscrire</a></li>
+        </ol>
+      </nav>
+      <nav class="noshebergements">
+        <h4>Nos hébergements</h4>
+        <ol>
+          <li class="liens"><a href="charte.html">Hébergements</a></li>
+          <li class="liens"><a href="votrehotel.html">Activités</a></li>
+        </ol>
+      </nav>
+      <nav class="assistance">
+        <h4>Assistance</h4>
+        <ol>
+          <li class="liens"><a href="aide.html">Hébergements</a></li>
+          <li class="liens"><a href="contact.html">Activités</a></li>
+        </ol>
+      </nav>
+    </section>
   </body>
 </html>
