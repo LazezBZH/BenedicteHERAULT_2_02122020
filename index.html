@@ -6,6 +6,12 @@
     <meta name="description" content="Reservia" />
     <meta name="author" content="LazezBZH" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 640px)"
+      href="stylesmall.css"
+      type="text/css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
@@ -31,6 +37,7 @@
             class="chercher"
             alt="chercher"
           />
+
           <input
             type="search"
             id="recherche"
@@ -43,17 +50,15 @@
       <nav class="entete">
         <!--haut et droite-->
         <ol>
-          <li class="entete"><a href="#hebergements">Hébergements</a></li>
-          <li class="entete"><a href="#activites">Activités</a></li>
-          <li class="entete"><a href="#sinscrire">S'inscrire</a></li>
+          <li><a href="#hebergements">Hébergements</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#sinscrire">S'inscrire</a></li>
         </ol>
       </nav>
 
       <!--bas du header, filtres non fonctionnels, filtres changent au survol-->
       <section>
-        <button>
-          <p><strong>Filtres</strong></p>
-        </button>
+        <button class="filtres1">Filtres</button>
         <button class="filtres">
           <span>
             <img

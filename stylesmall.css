@@ -1,3 +1,16 @@
+@media screen and (max-width: 640px) {
+  header {
+    display: block;
+    clear: both;
+  }
+  .footer {
+    display: block;
+  }
+  h1 {
+    color: rgb(168, 70, 70);
+    font-weight: bolder;
+  }
+}
 /*police raleway*/
 * {
   font-family: "Raleway", sans-serif;
@@ -18,8 +31,9 @@ nav {
 .entete ol {
   min-width: 300px;
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*filtres changent au survol, boutons arrondis, icone bleue sur fond bleu clair*/
@@ -27,19 +41,8 @@ button {
   background-color: #ffff;
   border: none;
   height: 2em;
-  width: auto;
 }
-.filtres1 {
-  margin: 2rem auto;
-  min-width: auto;
-  max-width: auto;
-  border: none;
-  color: black;
-  font-size: 0.8rem;
-  text-align: justify;
-  font-weight: bolder;
-  padding: 0 4em 2.3em 0;
-}
+
 .filtres {
   margin: 2rem auto;
   min-width: 12em;
@@ -71,12 +74,12 @@ button {
 }
 #header {
   padding: 0 5em 0 5em;
-  display: flex;
+  display: block;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .chercher {
-  max-width: 15px;
+  max-width: 2.5%;
 }
 .rechercher {
   background-color: #0065fc;
@@ -85,10 +88,9 @@ button {
 }
 /*pied de page*/
 .footer {
-  display: flex;
+  display: block;
   justify-content: space-between;
-  padding: 1em 30em 1em 5em;
-  background-color: #f2f2f2;
+  padding: 1em 5em 1em 5em;
 }
 .footer ol {
   list-style-type: none;
