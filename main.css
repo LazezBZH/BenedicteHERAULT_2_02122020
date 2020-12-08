@@ -1,0 +1,77 @@
+/*police raleway*/
+* {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 1rem;
+  margin-left: 3em;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+p {
+  font-size: 0.6rem;
+}
+main {
+  /*ensemble hébergements,populaires et activités*/
+  display: flex;
+  width: 200%;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+}
+/*section hébergements*/
+.hebergements {
+  display: flex;
+  width: 65%;
+  flex-wrap: wrap;
+}
+figure {
+  position: relative;
+  float: left;
+}
+.heb img {
+  width: 10rem;
+  height: 8rem;
+
+  clear: left;
+  margin-bottom: 0;
+  margin-right: 0.2rem;
+
+  padding: 1rem;
+  background-color: white;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+
+  width: 10rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.star img {
+  width: 0.5rem;
+  height: auto;
+}
+.star {
+  display: flex;
+}
+/*section populaires*/
+.populaires {
+  display: flex;
+  width: 25%;
+}
+/*section activités*/
+.activites {
+  display: flex;
+  width: 25%;
+}

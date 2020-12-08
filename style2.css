@@ -1,0 +1,95 @@
+/*police raleway*/
+* {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+p {
+  font-size: 10px;
+}
+/*barre navigation*/
+
+.entete {
+  font-size: 0.8em;
+}
+
+header ol {
+  min-width: 300px;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+}
+header {
+  padding: 0 5em 0 5em;
+  display: flex;
+  justify-content: space-between;
+}
+/*filtres changent au survol, boutons arrondis, icone bleue sur fond bleu clair*/
+button {
+  background-color: #ffff;
+  border: none;
+  height: 2em;
+  width: auto;
+}
+.filtres1 {
+  margin: 2rem auto;
+  min-width: auto;
+  max-width: auto;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: bolder;
+  padding: 0 4em 2.3em 0;
+}
+.filtres {
+  margin: 2rem auto;
+  min-width: 12em;
+  max-width: auto;
+  border: solid;
+  border-color: #f2f2f2;
+  border-width: 0.15em;
+  color: black;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: bolder;
+  padding: 0 4em 2.3em 0;
+  cursor: wait;
+  border-radius: 90px;
+}
+
+.filtres:hover {
+  background-color: rgb(153, 204, 170);
+}
+.filtres img {
+  /*icones dans filtres*/
+  height: 1.5em;
+  padding: 5px;
+  border-style: none;
+  border-radius: 50%;
+  background-color: #deebff;
+  vertical-align: middle;
+}
+
+.chercher {
+  max-width: 15px;
+}
+.rechercher {
+  background-color: #0065fc;
+  border: none;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+/*pied de page*/
+.footer {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 30em 1em 5em;
+  background-color: #f2f2f2;
+}
+.footer ol {
+  list-style-type: none;
+}
