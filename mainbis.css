@@ -4,16 +4,18 @@
 }
 h1 {
   font-size: 1rem;
-  margin-left: 3rem;
+  margin: 1.5rem 0 0 3rem;
   font-weight: bolder;
+
 }
 h2 {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-weight: bolder;
+  line-height: 0.2rem;
 }
 p {
-  font-size: 0.5rem;
-  line-height: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 0rem;
 }
 body {
   width: 100%;
@@ -26,22 +28,28 @@ main {
 
   flex-wrap: wrap;
 }
+section {
+  margin: 1rem;
+}
 /*section hébergements*/
 .hebergements {
   display: flex;
-  width: 65%;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 figure {
+  width: 30%;
   position: relative;
-  float: left;
+
   background-color: white;
   border-radius: 1rem;
+
+  margin-left: 0;
+  margin-right: 0;
 }
 .hebergements img {
-  width: 10.9rem;
   height: 8rem;
-
+  width: 96%;
   padding: 0.3rem;
   border-radius: 1rem;
 }
@@ -49,7 +57,7 @@ figure {
 figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  width: 10.5rem;
+  width: 92.4%;
   height: 3.5rem;
   position: absolute;
   bottom: -1rem;
@@ -69,14 +77,39 @@ figcaption {
 /*section populaires*/
 .populaires {
   display: flex;
-  width: 10%;
 }
 /*section activités*/
 .activites {
   display: flex;
-  width: 25%;
 }
 /*3 sections de main sur fond gris*/
-.principal {
+.principal1,
+.principal2 {
   background-color: #f2f2f2;
+  margin-left: 6%;
+  border-radius: 1rem;
+}
+.principal1 {
+  width: 55%;
+  max-height: 30rem;
+}
+.principal1 a{ /*lien afficher plus en noir*/
+  text-decoration: none;
+color:black;
+
+{
+text-decoration: none;
+color: red;
+}
+}
+.principal2 {
+  width: 27.5%;
+}
+.principal3 {
+  margin-left: 6%;
+  width: 90%;
+}
+#afficher {
+  margin:  2rem 0 2rem 3rem;
+  ma
 }
