@@ -4,22 +4,26 @@
 }
 h1 {
   font-size: 1rem;
-  margin-left: 3em;
+  margin-left: 3rem;
   font-weight: bolder;
 }
 h2 {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   font-weight: bolder;
 }
 p {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+body {
+  width: 100%;
 }
 main {
   /*ensemble hébergements,populaires et activités*/
   display: flex;
-  width: 200%;
+
   flex-direction: row;
-  background-color: #f2f2f2;
+
   flex-wrap: wrap;
 }
 /*section hébergements*/
@@ -31,36 +35,33 @@ main {
 figure {
   position: relative;
   float: left;
+  background-color: white;
+  border-radius: 1rem;
 }
-.heb img {
-  width: 10rem;
+.hebergements img {
+  width: 10.9rem;
   height: 8rem;
 
-  clear: left;
-  margin-bottom: 0;
-  margin-right: 0.2rem;
-
-  padding: 1rem;
-  background-color: white;
+  padding: 0.3rem;
+  border-radius: 1rem;
 }
 
 figcaption {
-  display: flex;
-  flex-direction: column;
-
   background-color: white;
-
-  width: 10rem;
-  height: 2.5rem;
+  border-radius: 0 0 1rem 1rem;
+  width: 10.5rem;
+  height: 3.5rem;
   position: absolute;
-  bottom: 0;
-  padding-left: 1.5rem;
-  padding-top: 1rem;
+  bottom: -1rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  line-height: 0rem;
 }
 
 .star img {
   width: 0.5rem;
   height: auto;
+  padding: 0;
 }
 .star {
   display: flex;
@@ -68,10 +69,14 @@ figcaption {
 /*section populaires*/
 .populaires {
   display: flex;
-  width: 25%;
+  width: 10%;
 }
 /*section activités*/
 .activites {
   display: flex;
   width: 25%;
+}
+/*3 sections de main sur fond gris*/
+.principal {
+  background-color: #f2f2f2;
 }
