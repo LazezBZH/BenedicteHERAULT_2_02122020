@@ -93,7 +93,7 @@ figcaption {
   width: 55%;
   max-height: 30rem;
 }
-.principal1 a{ /*lien afficher plus en noir*/
+.principal1 a{ /*liens afficher plus et hébergement en noir non soulignés*/
   text-decoration: none;
 color:black;
 
