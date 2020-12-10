@@ -6,7 +6,6 @@ h1 {
   font-size: 1rem;
   margin: 1.5rem 0 0 3rem;
   font-weight: bolder;
-
 }
 h2 {
   font-size: 0.8rem;
@@ -20,6 +19,7 @@ p {
 body {
   width: 100%;
 }
+
 main {
   /*ensemble hébergements,populaires et activités*/
   display: flex;
@@ -28,17 +28,92 @@ main {
 
   flex-wrap: wrap;
 }
+/*2 sections de main sur fond gris*/
+.principal1,
+.principal2 {
+  background-color: #f2f2f2;
+  margin-left: 6%;
+  border-radius: 1rem;
+}
+
+.principal1 a,
+.principal2 a,
+.principal3 a {
+  /*liens afficher plus et hébergement en noir non soulignés*/
+  text-decoration: none;
+  color: black;
+}
+
 section {
   margin: 1rem;
 }
-/*section hébergements*/
+
+/*section principal1(hébergements)*/
+.principal1 {
+  width: 55%;
+  max-height: 30rem;
+}
 .hebergements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-figure {
+.heb {
   width: 30%;
+  height: 11rem;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+.hebe {
+  max-width: 96%;
+  position: relative;
+  top: -1.5rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  border-radius: 1rem;
+}
+
+.hebergements figcaption {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  width: 92.4%;
+  height: 5rem;
+  position: absolute;
+  bottom: -1rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  line-height: 0rem;
+}
+
+.star {
+  display: flex;
+}
+.star img {
+  width: 0.5rem;
+  height: auto;
+  padding: 0;
+}
+#afficher {
+  margin: 2rem 0 2rem 3rem;
+}
+
+/*section principal2 (populaires)*/
+.principal2 {
+  width: 27.5%;
+  display: block;
+}
+
+.populaires {
+  display: block;
+}
+.pop {
+  /*figures*/
+
+  width: 35%;
   position: relative;
 
   background-color: white;
@@ -47,69 +122,39 @@ figure {
   margin-left: 0;
   margin-right: 0;
 }
-.hebergements img {
-  height: 8rem;
+.populaires img {
+  height: 6rem;
   width: 96%;
   padding: 0.3rem;
   border-radius: 1rem;
 }
 
-figcaption {
-  background-color: white;
+.populaires figcaption {
+  background-color: rgb(112, 42, 42);
   border-radius: 0 0 1rem 1rem;
-  width: 92.4%;
-  height: 3.5rem;
+  width: 85%;
+  height: 3rem;
   position: absolute;
-  bottom: -1rem;
+  bottom: 0rem;
   padding-left: 1rem;
   padding-top: 0.3rem;
   line-height: 0rem;
 }
-
-.star img {
-  width: 0.5rem;
-  height: auto;
-  padding: 0;
-}
 .star {
   display: flex;
 }
-/*section populaires*/
-.populaires {
+.star img {
   display: flex;
+  width: 0.5rem;
+  height: auto;
+  padding: 0;
 }
 /*section activités*/
 .activites {
   display: flex;
 }
-/*3 sections de main sur fond gris*/
-.principal1,
-.principal2 {
-  background-color: #f2f2f2;
-  margin-left: 6%;
-  border-radius: 1rem;
-}
-.principal1 {
-  width: 55%;
-  max-height: 30rem;
-}
-.principal1 a{ /*liens afficher plus et hébergement en noir non soulignés*/
-  text-decoration: none;
-color:black;
 
-{
-text-decoration: none;
-color: red;
-}
-}
-.principal2 {
-  width: 27.5%;
-}
 .principal3 {
   margin-left: 6%;
   width: 90%;
-}
-#afficher {
-  margin:  2rem 0 2rem 3rem;
-  ma
 }
