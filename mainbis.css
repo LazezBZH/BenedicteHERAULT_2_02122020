@@ -3,14 +3,14 @@
   font-family: "Raleway", sans-serif;
 }
 h1 {
-  font-size: 1rem;
-  margin: 1.5rem 0 0 3rem;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0 1rem;
   font-weight: bolder;
 }
 h2 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bolder;
-  line-height: 0.2rem;
+  line-height: 0.8rem;
 }
 p {
   font-size: 0.8rem;
@@ -27,12 +27,15 @@ main {
   flex-direction: row;
 
   flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 /*2 sections de main sur fond gris*/
 .principal1,
 .principal2 {
   background-color: #f2f2f2;
-  margin-left: 6%;
+
   border-radius: 1rem;
 }
 
@@ -50,8 +53,8 @@ section {
 
 /*section principal1(hébergements)*/
 .principal1 {
-  width: 55%;
-  max-height: 30rem;
+  width: 60%;
+  max-height: 35rem;
 }
 .hebergements {
   display: flex;
@@ -73,7 +76,7 @@ section {
   max-width: 96%;
   position: relative;
   top: -1.5rem;
-  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  padding: 1.8rem 0.3rem 0.3rem 0.3rem;
   border-radius: 1rem;
 }
 
@@ -81,64 +84,68 @@ section {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   width: 92.4%;
-  height: 5rem;
+  height: 5.5rem;
   position: absolute;
   bottom: -1rem;
   padding-left: 1rem;
   padding-top: 0.3rem;
-  line-height: 0rem;
 }
 
 .star {
   display: flex;
 }
 .star img {
-  width: 0.5rem;
+  min-width: 0.7rem;
   height: auto;
   padding: 0;
 }
 #afficher {
-  margin: 2rem 0 2rem 3rem;
+  margin: 2rem 0 2rem 1rem;
 }
 
 /*section principal2 (populaires)*/
 .principal2 {
-  width: 27.5%;
+  width: 32%;
   display: block;
+  padding-left: 1rem;
 }
 
 .populaires {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 }
 .pop {
   /*figures*/
 
-  width: 35%;
+  height: 9rem;
+  width: 9rem;
   position: relative;
 
   background-color: white;
   border-radius: 1rem;
 
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0rem;
+  margin-top: -1rem;
 }
 .populaires img {
-  height: 6rem;
+  height: 8.5rem;
   width: 96%;
-  padding: 0.3rem;
+  padding-top: 1.8rem;
   border-radius: 1rem;
 }
 
 .populaires figcaption {
-  background-color: rgb(112, 42, 42);
-  border-radius: 0 0 1rem 1rem;
-  width: 85%;
-  height: 3rem;
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+  width: 12rem;
+  height: 8.7rem;
   position: absolute;
-  bottom: 0rem;
+  top: 0rem;
+  right: -12rem;
+
   padding-left: 1rem;
   padding-top: 0.3rem;
-  line-height: 0rem;
 }
 .star {
   display: flex;
@@ -157,4 +164,8 @@ section {
 .principal3 {
   margin-left: 6%;
   width: 90%;
+}
+.titpop {
+  color: blue;
+  line-height: 1rem;
 }
