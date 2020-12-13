@@ -1,0 +1,90 @@
+/*police raleway*/
+* {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0 1rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: bolder;
+  line-height: 0.8rem;
+}
+p {
+  font-size: 0.8rem;
+  line-height: 0rem;
+}
+body {
+  width: 100%;
+}
+main {
+  /*ensemble hébergements,populaires et activités*/
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/*2 sections de main sur fond gris*/
+.principal1,
+.principal2 {
+  background-color: #f2f2f2;
+
+  border-radius: 1rem;
+}
+
+.principal1 a,
+.principal2 a,
+.principal3 a {
+  /*liens afficher plus et hébergement en noir non soulignés*/
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 1rem;
+}
+/*principal3*/
+.principal3 {
+  width: 60%;
+  max-height: 35rem;
+}
+.activites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.act {
+  width: 30%;
+  height: 11rem;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+.acti {
+  max-width: 96%;
+  position: relative;
+  top: -1.5rem;
+  padding: 1.8rem 0.3rem 0.3rem 0.3rem;
+  border-radius: 1rem;
+}
+
+.activite figcaption {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  width: 92.4%;
+  height: 5.5rem;
+  position: absolute;
+  bottom: 0rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
