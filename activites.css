@@ -8,7 +8,7 @@ h1 {
   font-weight: bolder;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bolder;
   line-height: 0.8rem;
 }
@@ -49,42 +49,105 @@ main {
 section {
   margin: 1rem;
 }
-/*principal3*/
+/* section principal3 activités*/
+
 .principal3 {
-  width: 60%;
-  max-height: 35rem;
+  width: 1240px;
+  height: 453px;
 }
 .activites {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-.act {
-  width: 30%;
-  height: 11rem;
+.act1 {
+  width: 262.6px;
+  height: 385.1px;
   overflow: hidden;
   position: relative;
   background-color: white;
   border-radius: 1rem;
-
+  box-shadow: 3px 3px 0 #f2f2f2;
   margin-left: 0;
   margin-right: 0;
 }
-.acti {
-  max-width: 96%;
+
+.act2 {
+  width: 262.6px;
+  height: 185px;
+  overflow: hidden;
   position: relative;
-  top: -1.5rem;
-  padding: 1.8rem 0.3rem 0.3rem 0.3rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 0 #f2f2f2;
+  margin-left: 0;
+  margin-right: 0;
+}
+.acti1 {
+  width: 262.6px;
+  height: 380px;
+  position: relative;
+
   border-radius: 1rem;
 }
 
-.activite figcaption {
+.acti2 {
+  width: 262.6px;
+  height: 200px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti3 {
+  width: 262.6px;
+  height: 150px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti4 {
+  width: 262.6px;
+  height: 380px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti5 {
+  width: 262.6px;
+  height: 160px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti6 {
+  width: 262.6px;
+  height: 168px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.legende {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  width: 92.4%;
-  height: 5.5rem;
+  width: 262.6px;
+  height: 51px;
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+.legende36 {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  width: 248px;
+  height: 51px;
+  position: absolute;
+  bottom: 0;
   padding-left: 1rem;
   padding-top: 0.3rem;
 }

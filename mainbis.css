@@ -1,4 +1,6 @@
 /*police raleway*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -8,7 +10,7 @@ h1 {
   font-weight: bolder;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bolder;
   line-height: 0.8rem;
 }
@@ -18,6 +20,80 @@ p {
 }
 body {
   width: 100%;
+}
+
+/*barre navigation*/
+
+.entete {
+  font-size: 0.8em;
+}
+
+header ol {
+  min-width: 300px;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+}
+header {
+  padding: 0 5em 0 5em;
+  display: flex;
+  justify-content: space-between;
+}
+/*filtres changent au survol, boutons arrondis, icone bleue sur fond bleu clair*/
+button {
+  background-color: #ffff;
+  border: none;
+  height: 2em;
+  width: auto;
+}
+.filtres1 {
+  margin: 2rem auto;
+  min-width: auto;
+  max-width: auto;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: bolder;
+  padding: 0 4em 2.3em 0;
+}
+.filtres {
+  margin: 2rem auto;
+  min-width: 12em;
+  max-width: auto;
+  border: solid;
+  border-color: #f2f2f2;
+  border-width: 0.15em;
+  color: black;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: bolder;
+  padding: 0 4em 2.3em 0;
+  cursor: wait;
+  border-radius: 90px;
+}
+
+.filtres:hover {
+  background-color: rgb(153, 204, 170);
+}
+.filtres img {
+  /*icones dans filtres*/
+  height: 1.5em;
+  padding: 5px;
+  border-style: none;
+  border-radius: 50%;
+  background-color: #deebff;
+  vertical-align: middle;
+}
+
+.chercher {
+  max-width: 15px;
+}
+.rechercher {
+  background-color: #0065fc;
+  border: none;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
 }
 
 main {
@@ -41,7 +117,8 @@ main {
 
 .principal1 a,
 .principal2 a,
-.principal3 a {
+.principal3 a,
+.footer a {
   /*liens afficher plus et hébergement en noir non soulignés*/
   text-decoration: none;
   color: black;
@@ -53,8 +130,8 @@ section {
 
 /*section principal1(hébergements)*/
 .principal1 {
-  width: 60%;
-  max-height: 35rem;
+  width: 65%;
+  max-height: 600px;
 }
 .hebergements {
   display: flex;
@@ -62,8 +139,8 @@ section {
   justify-content: space-evenly;
 }
 .heb {
-  width: 30%;
-  height: 11rem;
+  width: 213px;
+  height: 169.2px;
   overflow: hidden;
   position: relative;
   background-color: white;
@@ -73,20 +150,21 @@ section {
   margin-right: 0;
 }
 .hebe {
-  max-width: 96%;
+  width: 210px;
+  height: 110px;
   position: relative;
-  top: -1.5rem;
-  padding: 1.8rem 0.3rem 0.3rem 0.3rem;
+  padding-left: 2px;
+  padding-top: 2px;
   border-radius: 1rem;
 }
 
 .hebergements figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  width: 92.4%;
-  height: 5.5rem;
+  width: 211.5px;
+  height: 73px;
   position: absolute;
-  bottom: -1rem;
+  bottom: 0;
   padding-left: 1rem;
   padding-top: 0.3rem;
 }
@@ -105,46 +183,45 @@ section {
 
 /*section principal2 (populaires)*/
 .principal2 {
-  width: 32%;
+  width: 27%;
   display: block;
   padding-left: 1rem;
 }
 
 .populaires {
   display: flex;
-  align-items: center;
-  margin-top: 2rem;
+  align-items: stretch;
+  margin-left: 20px;
 }
 .pop {
   /*figures*/
 
-  height: 9rem;
-  width: 9rem;
+  height: 120px;
+  width: 292px;
   position: relative;
 
   background-color: white;
   border-radius: 1rem;
-
-  margin-left: 0rem;
-  margin-top: -1rem;
+  margin-top: 30px;
+  margin-left: 0;
 }
-.populaires img {
-  height: 8.5rem;
-  width: 96%;
-  padding-top: 1.8rem;
+.popu {
+  height: 115px;
+  width: 130px;
+  padding-top: 2px;
+  padding-left: 2px;
   border-radius: 1rem;
 }
 
 .populaires figcaption {
   background-color: white;
   border-radius: 0 1rem 1rem 0;
-  width: 12rem;
-  height: 8.7rem;
+  width: 125px;
+  height: 115px;
   position: absolute;
   top: 0rem;
-  right: -12rem;
+  right: 25px;
 
-  padding-left: 1rem;
   padding-top: 0.3rem;
 }
 .star {
@@ -156,16 +233,125 @@ section {
   height: auto;
   padding: 0;
 }
-/*section activités*/
-.activites {
-  display: flex;
-}
+
+/* section principal3 activités*/
+/* section principal3 activités*/
 
 .principal3 {
-  margin-left: 6%;
-  width: 90%;
+  width: 1240px;
+  height: 453px;
 }
-.titpop {
-  color: blue;
-  line-height: 1rem;
+.activites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.act1 {
+  width: 262.6px;
+  height: 385.1px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 0 #f2f2f2;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.act2 {
+  width: 262.6px;
+  height: 185px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 0 #f2f2f2;
+  margin-left: 0;
+  margin-right: 0;
+}
+.acti1 {
+  width: 262.6px;
+  height: 380px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti2 {
+  width: 262.6px;
+  height: 200px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti3 {
+  width: 262.6px;
+  height: 150px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti4 {
+  width: 262.6px;
+  height: 380px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti5 {
+  width: 262.6px;
+  height: 160px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.acti6 {
+  width: 262.6px;
+  height: 168px;
+  position: relative;
+
+  border-radius: 1rem;
+}
+
+.legende {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  width: 262.6px;
+  height: 51px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+.legende36 {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  width: 248px;
+  height: 51px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+/*pied de page*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 300px;
+  font-size: 0.7rem;
+}
+.footer ol {
+  list-style-type: none;
+  padding-top: 0%;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 0.8rem;
+  padding-left: 40px;
+  padding-bottom: 0%;
 }

@@ -8,16 +8,83 @@
     <link rel="stylesheet" href="mainbis.css" type="text/css" media="all" />
   </head>
   <body>
+    <header id="header">
+      <!--gauche du header-->
+      <p><img src="images/logo/logo.svg" alt="logo" /></p>
+
+      <!--haut et droite-->
+      <nav class="entete">
+        <ol>
+          <li><a href="#hebergements">Hébergements</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+        </ol>
+      </nav>
+    </header>
+    <section class="section1">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+
+      <!--recherche-->
+
+      <div>
+        <img
+          src="/images/icones/map-marker-alt-solid.svg"
+          class="chercher"
+          alt="chercher"
+        />
+
+        <input
+          type="search"
+          id="recherche"
+          name="recherche"
+          placeholder="Marseille, France"
+        />
+        <button class="rechercher">Envoyer</button>
+      </div>
+    </section>
+
+    <!--bas du header, filtres non fonctionnels, filtres changent au survol-->
+    <section>
+      <button class="filtres1">Filtres</button>
+      <button class="filtres">
+        <span>
+          <img
+            src="/images/icones/money-bill-wave-solid.png"
+            alt="économique"
+          />Économique</span
+        >
+      </button>
+      <button class="filtres">
+        <span>
+          <img src="/images/icones/child-solid.png" alt="familial" />
+          Familial</span
+        >
+      </button>
+      <button class="filtres">
+        <span>
+          <img src="/images/icones/heart-solid.png" alt="romantique" />
+          Romantique</span
+        >
+      </button>
+      <button class="filtres">
+        <span>
+          <img src="/images/icones/dog-solid.png" alt="animaux" />
+          Animaux autorisés</span
+        >
+      </button>
+    </section>
+
     <main>
       <!--regroupe hébergements activités et populaires-->
-      <section class="principal1">
+      <section class="principal1" id="hebergements">
         <!--6 photos en figcaption 2lignes et 3colonnes-->
         <h1>Hébergements à Marseille</h1>
 
-        <div class="hebergements">
+        <div class="hebergements" >
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H1L.jpg"
+              src="/images/hebergements/4_small/H1S.jpg"
               alt="Auberge de la Cannebière"
             />
             <figcaption class="legende">
@@ -36,7 +103,7 @@
           </figure>
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H2L.jpg"
+              src="/images/hebergements/4_small/H2S.jpg"
               alt="Hôtel du port"
             />
             <figcaption>
@@ -53,7 +120,7 @@
           </figure>
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H3L.jpg"
+              src="/images/hebergements/4_small/H3S.jpg"
               alt="Hôtel les mouettes"
             />
             <figcaption>
@@ -70,7 +137,7 @@
           </figure>
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H4L.jpg"
+              src="/images/hebergements/4_small/H4S.jpg"
               alt="Hôtel de la mer"
             />
             <figcaption>
@@ -87,7 +154,7 @@
           </figure>
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H5L.jpg"
+              src="/images/hebergements/4_small/H5S.jpg"
               alt="Auberge le Panier"
             />
             <figcaption>
@@ -104,7 +171,7 @@
           </figure>
           <figure class="heb">
             <img class="hebe"
-              src="/images/hebergements/2_large/H6L.jpg"
+              src="/images/hebergements/4_small/H6S.jpg"
               alt="Hôtel chez Amina"
             />
             <figcaption>
@@ -131,7 +198,7 @@
         <div class="populaires">
         
           <figure class="pop">
-            <img class="hebe"
+            <img class="popu"
               src="/images/hebergements/2_large/P1L.jpg"
               alt="Hôtel le soleil du matin"
             />
@@ -149,7 +216,7 @@
               </div>
             </figcaption>
             <figure class="pop">
-            <img class="hebe"
+            <img class="popu"
               src="/images/hebergements/2_large/P2L.jpg"
               alt="Au cœur de l'eau Chambres d'hôtes"
             />
@@ -167,7 +234,7 @@
               </div>
             </figcaption>
             <figure class="pop">
-            <img class="hebe"
+            <img class="popu"
               src="/images/hebergements/2_large/P3L.jpg"
               alt="Hôtel tout Bleu et Blanc"
             />
@@ -186,11 +253,115 @@
             </figcaption>
             </div>
       </section>
-      <section class="principal3">
-        <!--6 photos en figcaption 4 colonnes colonnes 2et4sur2lignes-->
+       <section class="principal3" id="activites">
         <h1>Activités à Marseille</h1>
-        <div class="activites"></div>
+        <div class="activites" >
+          <figure class="act1">
+            <img
+              class="acti1"
+              src="/images/activites/4_small/A1S.jpg"
+              alt="Vieux port"
+            />
+            <figcaption class="legende">
+              <a href="Vieux port.html"> <h2>Vieux port</h2></a>
+            </figcaption>
+          </figure>
+
+          <div id="acti23">
+            <figure class="act2">
+              <img
+                class="acti2"
+                src="/images/activites/4_small/A2S.jpg"
+                alt="fort de Pomègues "
+              />
+              <figcaption class="legende">
+                <a href="fort pomègues.html"> <h2>Fort de Pomègues</h2></a>
+              </figcaption>
+            </figure>
+
+            <figure class="act2">
+              <img
+                class="acti3"
+                src="/images/activites/4_small/A3S.jpg"
+                alt="Îles du Frioul"
+              />
+              <figcaption class="legende36">
+                <a href="Îles du Frioul.html"> <h2>Îles du Frioul</h2></a>
+              </figcaption>
+            </figure>
+          </div>
+          <figure class="act1">
+            <img
+              class="acti4"
+              src="/images/activites/4_small/A4S.jpg"
+              alt="Parc national des Calanques"
+            />
+            <figcaption class="legende">
+              <a href="Parc national des Calanques.html">
+                <h2>Parc national des Calanques</h2></a
+              >
+            </figcaption>
+          </figure>
+          <div id="acti56">
+            <figure class="act2">
+              <img
+                class="acti5"
+                src="/images/activites/4_small/A5S.jpg"
+                alt="Notre Dame de la Garde"
+              />
+              <figcaption class="legende">
+                <a href="Notre Dame de la Garde.html">
+                  <h2>Notre-Dame-de-la-Garde</h2></a
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="act2">
+              <img
+                class="acti6"
+                src="/images/activites/4_small/A6S.jpg"
+                alt="Parc longchamp"
+              />
+              <figcaption class="legende36">
+                <a href="Parc longchamp.html"> <h2>Parc longchamp</h2></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
     </main>
+     <!--pied de page-->
+    <section class="footer">
+      <nav class="apropos">
+        <h4>À propos</h4>
+        <ol>
+          <li class="liens">
+            <a href="fonctionnement.html">Fonctionnement du site</a>
+          </li>
+          <li class="liens">
+            <a href="cgv.html">Conditions générales de vente</a>
+          </li>
+          <li class="liens">
+            <a href="confidentialite.html">Données et confidentialité</a>
+          </li>
+        </ol>
+      </nav>
+      <nav class="noshebergements">
+        <h4>Nos hébergements</h4>
+        <ol>
+          <li class="liens"><a href="charte.html">Charte qualité</a></li>
+          <li class="liens">
+            <a href="votrehotel.html">Soumettre votre hôtel</a>
+          </li>
+        </ol>
+      </nav>
+      <nav class="assistance">
+        <h4>Assistance</h4>
+        <ol>
+          <li class="liens"><a href="aide.html">Centre d'aide</a></li>
+          <li class="liens"><a href="contact.html">Nous contacter</a></li>
+        </ol>
+      </nav>
+    </section>
   </body>
 </html>
