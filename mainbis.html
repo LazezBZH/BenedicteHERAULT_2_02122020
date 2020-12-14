@@ -6,6 +6,7 @@
     <meta name="description" content="Reservia" />
     <meta name="author" content="LazezBZH" />
     <link rel="stylesheet" href="mainbis.css" type="text/css" media="all" />
+    <script src="https://kit.fontawesome.com/f272fe714d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="header">
@@ -38,9 +39,9 @@
           type="search"
           id="recherche"
           name="recherche"
-          placeholder="Marseille, France"
+          placeholder=" Marseille, France "
         />
-        <button class="rechercher">Envoyer</button>
+        <button class="rechercher">Rechercher</button>
       </div>
     </section>
 
@@ -73,13 +74,15 @@
           Animaux autorisés</span
         >
       </button>
+      <div class="avert"><p ></p> <!--avertissement !--><span id="fainfo" ><i class="fas fa-info"></i></span>
+Plus de 500 logements sont disponibles dans cette ville </p></div>
     </section>
 
     <main>
       <!--regroupe hébergements activités et populaires-->
       <section class="principal1" id="hebergements">
         <!--6 photos en figcaption 2lignes et 3colonnes-->
-        <h1>Hébergements à Marseille</h1>
+        <div class="hebtitre"><h1>Hébergements à Marseille</h1></div>
 
         <div class="hebergements" >
           <figure class="heb">
@@ -193,7 +196,7 @@
       </section>
       <section class="principal2">
         <!--3 photos en figcaption colonne-->
-        <h1>Les plus populaires</h1>
+        <div class="poptitre"><h1 >Les plus populaires</h1></div>
         
         <div class="populaires">
         
@@ -363,5 +366,6 @@
         </ol>
       </nav>
     </section>
+    
   </body>
 </html>
