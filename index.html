@@ -7,38 +7,40 @@
     <meta name="author" content="LazezBZH" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css"  />
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="stylesmall.css" />
+    <link rel="stylesheet" media="screen and (max-device-width: 767px)" href="stylesmall.css" />
     <script src="https://kit.fontawesome.com/f272fe714d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <!--gauche du header-->
-      <p><img src="images/logo/logo.svg" alt="logo" /></p>
-
-      <!--haut et droite-->
-      
-     <nav class="entete">
-        <ol>
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
-          <li ><a href="#" id="insc">S'inscrire</a></li>
-        </ol>
-      </nav>
-        </header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="entete">
+                    <ol class="entete1">
+                        <li ><a href="#hebergements" >Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                    </ol>
+                    <ol class="entete2">
+                        <li ><a href="#" id="insc">S'inscrire</a></li>
+                    </ol>
+                </div>
+            </nav>
+            </header>
 
     <section class="section1"> <!--sous le header -->
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
-      <div> <!--recherche-->
-        <i class="fas fa-map-marker-alt"></i>
-        <input
-          type="search"
-          id="recherche"
-          name="recherche"
-          placeholder=" Marseille, France "
-        />
-        <button class="rechercher">Rechercher</button>
+     <!--recherche-->
+       <div class="zonerecherche">
+        <form class="rechercher" method="GET" action="rechercher.php">
+          <i class="fa fa-map-marker"></i>
+          <input type="text" placeholder=" Marseille, France " />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
       </div>
 
     </section>
