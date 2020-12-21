@@ -88,7 +88,6 @@ header ol {
   left: 2.3rem;
 }
 
-}
 #chercher {
   font-size: 0.8rem;
   color: white;
@@ -96,8 +95,6 @@ header ol {
 
 .loupe i {
   display: none;
-  
-
 }
 
 /*filtres changent au survol, boutons arrondis, icone bleue sur fond bleu clair*/
@@ -454,9 +451,9 @@ footer {
   width: 100%;
   margin-left: 1rem;
   display: flex;
- 
+
   justify-content: left;
- 
+
   font-size: 0.8rem;
   background-color: #f2f2f2;
 }
@@ -465,7 +462,7 @@ footer ol {
 
   line-height: 20px;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: black;
 }
@@ -475,13 +472,12 @@ h4 {
   padding-left: 40px;
   padding-bottom: 0%;
 }
-.apropos{
+.apropos {
   display: block;
 }
-.noshebergements{
+.noshebergements {
   display: block;
 }
-.assistance{
+.assistance {
   display: block;
- 
 }
