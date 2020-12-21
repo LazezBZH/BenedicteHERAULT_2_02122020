@@ -83,9 +83,11 @@ header ol {
 }
 
 /*zone de recherche*/
-
+.zonederecherche {
+}
 .rechercher i {
   position: absolute;
+  left: 5%;
   color: #000;
   background-color: #f2f2f2;
   padding: 0.6rem 1rem;
@@ -95,7 +97,7 @@ header ol {
   width: 10rem;
   height: 1.7rem;
   position: relative;
-  left: 2.6rem;
+  left: 3.5rem;
   bottom: 0rem;
   border-color: #f2f2f2;
 }
@@ -127,13 +129,29 @@ header ol {
   display: block;
 }
 .filtressmall {
-  margin-left: 0rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .filtres1 {
-  margin-left: 4rem;
+  margin-left: 15%;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
 .filtres {
-  margin-top: 3rem;
-  margin-left: 4rem;
-  margin-right: -1rem;
+  width: auto;
+  margin-left: 20%;
+  margin-right: 0rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+}
+.filtressmall button {
+}
+.avert {
+  margin-left: 12%;
+  font-size: 1.5rem;
+  text-indent: -2rem;
+}
+.avert i {
+  padding-left: 1rem;
 }
