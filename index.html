@@ -5,73 +5,90 @@
     <title>Reservia</title>
     <meta name="description" content="Reservia" />
     <meta name="author" content="LazezBZH" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css"  />
-    <link rel="stylesheet" media="screen and (max-device-width: 767px)" href="stylesmall.css" />
-    <script src="https://kit.fontawesome.com/f272fe714d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 767px)"
+      href="stylesmall.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f272fe714d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="entete">
-                    <ol class="entete1">
-                        <li ><a href="#hebergements" >Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                    </ol>
-                    <ol class="entete2">
-                        <li ><a href="#" id="insc">S'inscrire</a></li>
-                    </ol>
-                </div>
-            </nav>
-            </header>
-
-    <section class="section1"> <!--sous le header -->
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="entete">
+          <ol class="entete1">
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
+          </ol>
+          <ol class="entete2">
+            <li><a href="#" id="insc">S'inscrire</a></li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+    <section class="section1">
+      <!--sous le header -->
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-
-     <!--recherche-->
-       <div class="zonerecherche">
+      <div class="zonerecherche">
         <form class="rechercher" method="GET" action="rechercher.php">
           <i class="fa fa-map-marker"></i>
-          <input type="text" placeholder=" Marseille, France " />
-          <button type="submit"><i class="fas fa-search"></i></button>
+          <input
+            class="recherche"
+            type="text"
+            placeholder=" Marseille, France "
+          />
+          <button type="submit" class="chercher">
+            <span id="chercher"> Rechercher </span
+            ><spann class="loupe"><i class="fas fa-search"></i></spann>
+          </button>
         </form>
       </div>
-
     </section>
-
-    <section class="sectionfiltres">  <!--bas du header, filtres non fonctionnels, filtres changent au survol-->
-      <button class="filtres1">Filtres</button>
-      <button class="filtres">
-       
-<span class="fa-stack">
-  <i class="fas fa-circle fa-stack-2x"></i>
-  <i class="fas fa-money-bill-wave fa-stack-1x"></i>
-</span>
-      Économique</button>
-      <button class="filtres">
-        <span class="fa-stack">
-  <i class="fas fa-circle fa-stack-2x"></i>
-  <i class="fas fa-child fa-stack-1x"></i>
-</span> Familial</button>
-      <button class="filtres">
-        <span class="fa-stack">
-  <i class="fas fa-circle fa-stack-2x"></i>
-  <i class="fas fa-heart fa-stack-1x"></i>
-</span>Romantique
-      </button>
-      <button class="filtres">
-       <span class="fa-stack">
-  <i class="fas fa-circle fa-stack-2x"></i>
-  <i class="fas fa-dog fa-stack-1x"></i>
-</span> Animaux autorisés
-      </button> </section>
-      <section class="avert"> <!--avertissement !--> 
+    <section class="sectionfiltres">
+      <!--bas du header, filtres non fonctionnels, filtres changent au survol-->
+      <p class="filtres1">Filtres</p>
+      <div class="filtressmall">
+        <button class="filtres">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-money-bill-wave fa-stack-1x"></i>
+          </span>
+          Économique
+        </button>
+        <button class="filtres">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-child fa-stack-1x"></i>
+          </span>
+          Familial
+        </button>
+        <button class="filtres">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-heart fa-stack-1x"></i> </span
+          >Romantique
+        </button>
+        <button class="filtres">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-dog fa-stack-1x"></i>
+          </span>
+          Animaux autorisés
+        </button>
+      </div>
+    </section>
+     <section class="avert"> <!--avertissement !--> 
         
 <span class="fa-stack">
   <i class="far fa-circle fa-stack-2x"></i>
@@ -80,7 +97,7 @@
 <span id="avert">Plus de 500 logements sont disponibles dans cette ville </span>
     </>
 </section>
-    <main>
+<main>
       <!--regroupe hébergements activités et populaires-->
       <section class="principal1" id="hebergements">
         <!--6 photos en figcaption 2lignes et 3colonnes-->
@@ -92,7 +109,7 @@
               src="/images/hebergements/4_small/H1S.jpg"
               alt="Auberge de la Cannebière"
             />
-            <figcaption class="legende">
+            <figcaption>
               
                 <h3>Auberge de la Cannebière</h3>
               <p>Nuit à partir de <strong>25€</strong></p>
@@ -192,7 +209,7 @@
           </figure></a>
         </div>
         <div id="afficher">
-          <h3><a href="page2.html">Afficher plus</a></h3>
+          <h3><a href="#">Afficher plus</a></h3>
         </div>
       </section>
       <section class="principal2">
@@ -337,7 +354,7 @@
       </section>
     </main>
      <!--pied de page-->
-    <section class="footer">
+    <footer>
       <nav class="apropos">
         <h4>À propos</h4>
         <ol>
@@ -368,7 +385,7 @@
           <li class="liens"><a href="#">Nous contacter</a></li>
         </ol>
       </nav>
-    </section>
+    </footer>
     
   </body>
 </html>
