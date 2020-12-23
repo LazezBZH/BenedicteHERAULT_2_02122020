@@ -176,7 +176,7 @@ main {
 .principal2,
 .principal1,
 .principal3 {
-  width: 98%;
+  width: auto;
   height: auto;
   margin: 0;
 }
