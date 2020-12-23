@@ -18,7 +18,7 @@ p {
   line-height: 1rem;
 }
 body {
-  width: 98%;
+  width: auto;
 }
 header {
   width: auto;
@@ -26,10 +26,11 @@ header {
 
 /*barre navigation*/
 .logo img {
-  width: 8rem;
+  width: 5rem;
 }
 
 nav {
+  font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -43,36 +44,49 @@ nav {
   order: -2;
 }
 header ol {
-  min-width: 12rem;
+  width: 8rem;
   list-style-type: none;
   display: flex;
 }
 
 #insc {
   color: #0065fc;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
+
 .entete1 a {
   color: black;
 }
-.entete1 a:hover {
+.entete a:hover {
   color: #0065fc;
-  text-decoration: underline;
+  border-top: none;
+}
+.entete a:visited {
+  border-bottom: 3px solid #0065fc;
 }
 .entete2 {
   position: relative;
   left: 13rem;
-  top: -4rem;
+  top: -3rem;
 }
 .entete1 {
-  width: 83%;
+  width: auto;
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  left: 0rem;
+  left: -2rem;
   top: -4rem;
-  padding: 0;
+  padding-right: 2rem;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+/*main*/
+main {
+  width: auto;
+  display: block;
+  margin-left: 0;
 }
 /*sous le header section1*/
 .section1 {
@@ -89,14 +103,14 @@ header ol {
 
   color: #000;
   background-color: #f2f2f2;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 1rem 0 0 1rem;
 }
 .rechercher input {
   width: 10rem;
-  height: 1.7rem;
+  height: 2rem;
   position: relative;
-  left: 2.5rem;
+  left: 2rem;
   bottom: 0rem;
   border-color: #f2f2f2;
 }
@@ -106,16 +120,16 @@ header ol {
   padding: 0;
   border-radius: 0 1rem 1rem 0;
   position: relative;
-  left: 2.3rem;
+  left: 1rem;
 }
-.loupe i {
+#loupe {
   display: block;
   font-size: 0.9rem;
   color: white;
   background-color: #0065fc;
   border-radius: 0 1rem 1rem 0;
   position: absolute;
-  bottom: -0.7rem;
+  bottom: -0.8rem;
 }
 
 #chercher {
@@ -128,25 +142,25 @@ header ol {
   display: block;
 }
 .filtressmall {
+  width: 99%;
   display: flex;
   flex-wrap: wrap;
 }
 .filtres1 {
-  margin-left: 15%;
+  margin-left: 4rem;
   margin-top: 0rem;
   margin-bottom: 3rem;
 }
 .filtres {
   width: auto;
-  margin-left: 20%;
-  margin-right: 0rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 1rem 1.5rem 1rem;
+
+  padding: 0rem 1rem 0 2rem;
+  margin: 0.5rem 0 0.5rem 4rem;
 }
 
 .avert {
-  margin-left: 14%;
+  width: 82%;
+  margin-left: 3rem;
   font-size: 1.5rem;
   text-indent: -2.2rem;
 }
@@ -154,35 +168,65 @@ header ol {
   padding-left: 1rem;
 }
 
-/*section principale (main)*/
-main {
-  display: block;
-  margin-left: 0;
-}
-main .principal:nth-child(2) {
-  order: -1;
+/*section principale */
+.principale {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .principal2,
 .principal1,
 .principal3 {
   width: 98%;
+  height: auto;
   margin: 0;
 }
 .principal1 {
   background-color: white;
+  margin-top: 2rem;
 }
-
+.hebtitre {
+  padding-left: 0%;
+}
 .hebergements {
   display: block;
   background-color: white;
 }
 .hebf {
-  width: 100%;
-  height: 18rem;
+  width: auto;
+  height: 15rem;
+  margin: 1rem 0 1rem 0;
 }
-
+.hebe,
+.hebebe,
+.hebebebe {
+  width: 22rem;
+}
 .popf {
-  width: 95%;
+  width: auto;
+  height: 7rem;
+  position: relative;
+
+  border-radius: 1rem;
+}
+.popu {
+  width: auto;
+  height: 7rem;
+
+  position: absolute;
+}
+.popul {
+  width: 10rem;
+  height: 7rem;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 1rem;
+}
+.populaires figcaption {
+  width: 10rem;
+  height: 7rem;
+  padding-left: 0.5rem;
+  position: absolute;
+  left: 8.5rem;
 }
 .principal2 {
   border-radius: 0;
@@ -190,6 +234,10 @@ main .principal:nth-child(2) {
 .activites {
   display: flex;
   flex-direction: column;
+}
+.actt1,
+.actt2 {
+  width: auto;
 }
 .acti1,
 .acti2,
@@ -201,9 +249,10 @@ main .principal:nth-child(2) {
 }
 /*pied de page*/
 footer {
-  max-width: 21rem;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem 2rem 0 0;
 }
 .apropos {
   display: block;
@@ -213,6 +262,4 @@ footer {
 }
 .assistance {
   display: block;
-
-  padding-right: 5rem;
 }
