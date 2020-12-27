@@ -22,7 +22,8 @@ p {
   line-height: 0rem;
 }
 body {
-  width: 99%;
+  width: auto;
+  margin: auto;
 }
 
 /*barre navigation*/
@@ -71,14 +72,9 @@ header ol {
 
 /*sous le header section1*/
 .section1 {
-  width: auto;
   margin-left: 2rem;
 }
-.sectionfiltres,
-.avert {
-  width: auto;
-  margin: auto;
-}
+
 /*zone de recherche*/
 .zonerecherche {
   padding-top: 1rem;
@@ -167,7 +163,7 @@ button {
   font-weight: bolder;
 
   cursor: wait;
-  border-radius: 90px;
+  border-radius: 1rem;
   position: relative;
 }
 
@@ -200,7 +196,7 @@ i {
 
 .principale {
   /*ensemble hébergements,populaires */
-  width: 98%;
+  width: auto;
   margin: auto;
   display: flex;
 
@@ -237,6 +233,7 @@ i {
 /*section principal1(hébergements)*/
 .principal1 {
   width: 60%;
+  margin: auto;
 }
 .hebtitre {
   padding-left: 20px;
@@ -264,7 +261,8 @@ i {
   margin: 0;
 }
 
-.hebe {
+.hebe,
+.hebep {
   width: 98%;
   height: 12rem;
   object-fit: cover;
@@ -308,7 +306,7 @@ i {
 
 /*section principal2 (populaires)*/
 .principal2 {
-  min-width: 35%;
+  width: 34%;
   margin: auto;
 }
 .poptitre {
@@ -319,13 +317,12 @@ i {
 .poptitre i {
   color: #000;
   position: relative;
-  top: 1rem;
+  top: -4rem;
   right: 1rem;
 }
 .populaires {
   display: flex;
   flex-direction: column;
-
   margin-left: 20px;
 }
 .pop {
@@ -368,11 +365,15 @@ i {
 
   padding-top: 0.3rem;
 }
+.principal2 i {
+  padding-top: 5rem;
+}
 
 /* section principal3 activités*/
 
 .principal3 {
   width: auto;
+  margin: auto;
   margin: 1%;
   padding-top: 2rem;
 }

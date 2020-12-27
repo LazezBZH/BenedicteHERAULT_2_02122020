@@ -18,7 +18,7 @@ p {
   line-height: 1rem;
 }
 body {
-  width: auto;
+  width: 99%;
 }
 header {
   width: auto;
@@ -170,6 +170,7 @@ main {
 
 /*section principale */
 .principale {
+  margin: auto;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -182,7 +183,7 @@ main {
 }
 .principal1 {
   background-color: white;
-  margin-top: 2rem;
+  margin: 0 1rem;
 }
 .hebtitre {
   padding-left: 0%;
@@ -200,6 +201,12 @@ main {
 .hebebe,
 .hebebebe {
   width: 22rem;
+}
+.hebebebe {
+  object-position: 0rem -12rem;
+}
+.poptitre i {
+  top: 1rem;
 }
 .popf {
   width: auto;
@@ -231,6 +238,12 @@ main {
 .principal2 {
   border-radius: 0;
 }
+.principal2 i {
+  padding-top: 0%;
+}
+.principal3 {
+  margin: 0 1rem;
+}
 .activites {
   display: flex;
   flex-direction: column;
@@ -251,8 +264,9 @@ main {
 footer {
   width: auto;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding: 2rem 2rem 0 0;
+  padding: 0 2rem 0 0;
 }
 .apropos {
   display: block;

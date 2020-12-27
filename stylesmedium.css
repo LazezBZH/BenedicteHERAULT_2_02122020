@@ -25,6 +25,7 @@ p {
 }
 body {
   width: auto;
+  margin: auto;
 }
 
 /*barre navigation*/
@@ -174,7 +175,7 @@ button {
   font-weight: bold;
 
   cursor: wait;
-  border-radius: 90px;
+  border-radius: 1rem;
   position: relative;
 }
 
@@ -212,11 +213,16 @@ i {
 
 /*section principal1(hébergements)*/
 .principal1 {
-  width: 98%;
+  width: auto;
+  margin: auto;
   padding: 0;
 }
 .hebtitre {
   padding-left: 20px;
+}
+.reduc {
+  letter-spacing: -1px;
+  text-indent: -1rem;
 }
 .hebergements {
   display: flex;
@@ -245,6 +251,16 @@ i {
   width: 98%;
   height: 12rem;
   object-fit: cover;
+  position: relative;
+  padding-left: 2px;
+  padding-top: 2px;
+  border-radius: 1rem 1rem 0 0;
+}
+.hebep {
+  width: 98%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: -4rem -4rem;
   position: relative;
   padding-left: 2px;
   padding-top: 2px;
@@ -285,11 +301,18 @@ i {
 
 /*populaires section principal2*/
 .principal2 {
-  width: 98%;
+  width: auto;
+  margin: auto;
   background-color: white;
 
   padding-top: 2rem;
   margin-bottom: 20rem;
+}
+.principal2 i {
+  padding-top: 0%;
+}
+.poptitre i {
+  top: 2rem;
 }
 .populaires {
   width: auto;
@@ -302,20 +325,20 @@ i {
   width: 13rem;
   height: auto;
   position: relative;
-
+  box-shadow: 8px 8px 0 #f2f2f2;
   border-radius: 1rem;
 }
 .popu {
   width: 12rem;
   height: 10rem;
-
+  object-position: 0rem -2rem;
   position: absolute;
   border-radius: 1rem 1rem 0 0;
 }
 .popul {
   width: 12rem;
   height: 10rem;
-
+  object-position: 0rem -8rem;
   position: absolute;
   border-radius: 1rem 1rem 0 0;
 }
@@ -332,13 +355,14 @@ i {
 /* section principal3 activités*/
 
 .principal3 {
-  width: 97%;
-  height: auto;
-  background-color: #white;
-  border: 1rem dashed #f2f2f2;
-  border-radius: 1rem;
   width: auto;
-  margin: 1%;
+  margin: auto;
+  height: auto;
+  background-color: white;
+  border: 0.2rem dashed #f2f2f2;
+  border-radius: 2rem;
+  width: auto;
+  margin-top: 1rem;
   padding: 0 0 1rem 0;
 }
 .activites {
@@ -421,19 +445,20 @@ i {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   width: 96%;
-  height: 51px;
+  height: 4rem;
   position: absolute;
   bottom: 0;
-  padding-left: 1rem;
+  padding-left: 0.8rem;
   padding-top: 0.3rem;
+  letter-spacing: -1px;
 }
 .legende36 {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   width: 248px;
-  height: 51px;
+  height: 4rem;
   position: absolute;
   bottom: 0;
-  padding-left: 1rem;
+  padding-left: 0.8rem;
   padding-top: 0.3rem;
 }
