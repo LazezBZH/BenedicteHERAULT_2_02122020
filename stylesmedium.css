@@ -30,7 +30,6 @@ body {
 
 /*barre navigation*/
 header {
-  width: auto;
   padding-top: 1rem;
 }
 .logo img {
@@ -79,14 +78,9 @@ header ol {
 
 /*sous le header section1*/
 .section1 {
-  width: auto;
   margin-left: 2rem;
 }
-.sectionfiltres,
-.avert {
-  width: auto;
-  margin: auto;
-}
+
 /*zone de recherche*/
 .zonerecherche {
   padding: 1rem 0;
@@ -212,10 +206,9 @@ i {
 }
 
 /*section principal1(hébergements)*/
+
 .principal1 {
   width: auto;
-  margin: auto;
-  padding: 0;
 }
 .hebtitre {
   padding-left: 20px;
@@ -233,64 +226,53 @@ i {
 
 .heb {
   width: 30%;
-  height: 14rem;
+  height: 16rem;
   margin-bottom: 2rem;
 }
 .hebf {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  position: relative;
+
   background-color: white;
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
   margin: 0;
 }
 
-.hebe {
-  width: 98%;
-  height: 12rem;
-  object-fit: cover;
-  position: relative;
-  padding-left: 2px;
-  padding-top: 2px;
-  border-radius: 1rem 1rem 0 0;
-}
+.hebe,
 .hebep {
   width: 98%;
-  height: 12rem;
+  height: 8rem;
   object-fit: cover;
-  object-position: -4rem -4rem;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
   border-radius: 1rem 1rem 0 0;
 }
 .hebebe {
   width: 98%;
+  height: 8rem;
   object-fit: cover;
   object-position: 0rem -4rem;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .hebebebe {
   width: 98%;
+  height: 8rem;
   object-fit: cover;
   object-position: 0rem -9rem;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .hebergements figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+
   padding-left: 1rem;
   padding-top: 0.2rem;
 }
@@ -302,62 +284,60 @@ i {
 /*populaires section principal2*/
 .principal2 {
   width: auto;
-  margin: auto;
   background-color: white;
-
-  padding-top: 2rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
-.principal2 i {
-  padding-top: 0%;
+.poptitre {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
 }
 .poptitre i {
+  color: #000;
+
   top: 2rem;
+  right: 1rem;
 }
 .populaires {
-  width: auto;
-
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-.popf {
-  width: 13rem;
-  height: auto;
-  position: relative;
-  box-shadow: 8px 8px 0 #f2f2f2;
-  border-radius: 1rem;
-}
-.popu {
-  width: 12rem;
-  height: 10rem;
-  object-position: 0rem -2rem;
-  position: absolute;
-  border-radius: 1rem 1rem 0 0;
-}
-.popul {
-  width: 12rem;
-  height: 10rem;
-  object-position: 0rem -8rem;
-  position: absolute;
-  border-radius: 1rem 1rem 0 0;
-}
-.populaires figcaption {
-  width: 11.7rem;
-  height: 7rem;
-  padding-left: 0.5rem;
-  position: absolute;
-  top: 7rem;
-  left: 0rem;
-  border-radius: 0 0 1rem 01rem;
+  margin-left: 20px;
 }
 
+.popf {
+  /*figures*/
+
+  display: block;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 0 #f2f2f2;
+  margin-top: 20px;
+  margin-left: 0;
+}
+.popu,
+.popul {
+  width: 100%;
+  object-fit: cover;
+  padding-top: 2px;
+  padding-left: 2px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.populaires figcaption {
+  width: auto;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+
+  padding-top: 0.3rem;
+  padding-left: 1rem;
+}
+.principal2 i {
+  padding-top: 0;
+}
 /* section principal3 activités*/
 
 .principal3 {
-  width: auto;
-  margin: auto;
-  height: auto;
   background-color: white;
   border: 0.2rem dashed #f2f2f2;
   border-radius: 2rem;
@@ -374,8 +354,6 @@ i {
   width: 96%;
   height: auto;
   overflow: hidden;
-  position: relative;
-
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
   margin-left: 0;
@@ -386,8 +364,6 @@ i {
   width: 96%;
   height: auto;
   overflow: hidden;
-  position: relative;
-
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
   margin-left: 0;
@@ -395,8 +371,7 @@ i {
 }
 .acti1 {
   width: 100%;
-  height: 22rem;
-  position: relative;
+  height: 26.5rem;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -404,7 +379,6 @@ i {
 .acti2 {
   width: 100%;
   height: 12rem;
-  position: relative;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -412,15 +386,13 @@ i {
 .acti3 {
   width: 100%;
   height: 9rem;
-  position: relative;
   object-fit: cover;
   border-radius: 1rem;
 }
 
 .acti4 {
   width: 100%;
-  height: 22rem;
-  position: relative;
+  height: 26.5rem;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -428,7 +400,6 @@ i {
 .acti5 {
   width: 100%;
   height: 9rem;
-  position: relative;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -436,7 +407,6 @@ i {
 .acti6 {
   width: 100%;
   height: 12rem;
-  position: relative;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -446,7 +416,6 @@ i {
   border-radius: 0 0 1rem 1rem;
   width: 96%;
   height: 4rem;
-  position: absolute;
   bottom: 0;
   padding-left: 0.8rem;
   padding-top: 0.3rem;
@@ -457,8 +426,11 @@ i {
   border-radius: 0 0 1rem 1rem;
   width: 248px;
   height: 4rem;
-  position: absolute;
   bottom: 0;
   padding-left: 0.8rem;
   padding-top: 0.3rem;
+}
+/*pied de page*/
+footer {
+  padding: 2rem 4rem 2rem 0;
 }

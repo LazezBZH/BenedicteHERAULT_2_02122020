@@ -127,7 +127,7 @@ button {
 .sectionfiltres i {
   font-size: 0.8rem;
   position: relative;
-  left: -1.5rem;
+  left: -1.7rem;
   top: 0.1rem;
 }
 .sectionfiltres .fa-circle {
@@ -135,7 +135,7 @@ button {
   font-size: 2.3rem;
   position: absolute;
   top: -0.7rem;
-  left: -2.1rem;
+  left: -2.3rem;
 }
 .filtres1 {
   margin-left: 5rem;
@@ -196,12 +196,7 @@ i {
 
 .principale {
   /*ensemble hébergements,populaires */
-  width: auto;
-  margin: auto;
   display: flex;
-
-  flex-direction: row;
-
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -233,7 +228,6 @@ i {
 /*section principal1(hébergements)*/
 .principal1 {
   width: 60%;
-  margin: auto;
 }
 .hebtitre {
   padding-left: 20px;
@@ -254,7 +248,7 @@ i {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: relative;
+
   background-color: white;
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
@@ -264,38 +258,39 @@ i {
 .hebe,
 .hebep {
   width: 98%;
-  height: 12rem;
+  height: 8rem;
   object-fit: cover;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
   border-radius: 1rem 1rem 0 0;
 }
 .hebebe {
   width: 98%;
+  height: 8rem;
   object-fit: cover;
   object-position: 0rem -4rem;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .hebebebe {
   width: 98%;
+  height: 8rem;
   object-fit: cover;
   object-position: 0rem -9rem;
-  position: relative;
+
   padding-left: 2px;
   padding-top: 2px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .hebergements figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+
   padding-left: 1rem;
   padding-top: 0.2rem;
 }
@@ -307,7 +302,6 @@ i {
 /*section principal2 (populaires)*/
 .principal2 {
   width: 34%;
-  margin: auto;
 }
 .poptitre {
   display: flex;
@@ -335,8 +329,8 @@ i {
 
   width: auto;
   height: 11rem;
+  display: flex;
 
-  position: relative;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
@@ -359,11 +353,9 @@ i {
   border-radius: 0 1rem 1rem 0;
   width: 8rem;
   height: 10.8rem;
-  position: absolute;
-  top: 0;
-  left: 12rem;
 
   padding-top: 0.3rem;
+  padding-left: 1rem;
 }
 .principal2 i {
   padding-top: 5rem;
@@ -372,10 +364,7 @@ i {
 /* section principal3 activités*/
 
 .principal3 {
-  width: auto;
-  margin: auto;
-  margin: 1%;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 .activites {
   display: flex;
@@ -386,8 +375,6 @@ i {
   width: 96%;
   height: auto;
   overflow: hidden;
-  position: relative;
-
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
   margin-left: 0;
@@ -398,8 +385,6 @@ i {
   width: 96%;
   height: auto;
   overflow: hidden;
-  position: relative;
-
   border-radius: 1rem;
   box-shadow: 3px 3px 0 #f2f2f2;
   margin-left: 0;
@@ -407,50 +392,44 @@ i {
 }
 .acti1 {
   width: 100%;
-  height: 22rem;
-  position: relative;
+  height: 25.8rem;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .acti2 {
   width: 100%;
   height: 12rem;
-  position: relative;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .acti3 {
   width: 100%;
   height: 9rem;
-  position: relative;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .acti4 {
   width: 100%;
-  height: 22rem;
-  position: relative;
+  height: 25.8rem;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .acti5 {
   width: 100%;
   height: 9rem;
-  position: relative;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .acti6 {
   width: 100%;
   height: 12rem;
-  position: relative;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .legende1 {
@@ -458,8 +437,7 @@ i {
   border-radius: 0 0 1rem 1rem;
   width: 96%;
   height: 51px;
-  position: absolute;
-  bottom: 0;
+
   padding-left: 1rem;
   padding-top: 0.3rem;
 }
@@ -468,27 +446,21 @@ i {
   border-radius: 0 0 1rem 1rem;
   width: 248px;
   height: 51px;
-  position: absolute;
-  bottom: 0;
+
   padding-left: 1rem;
   padding-top: 0.3rem;
 }
 
 /*pied de page*/
 footer {
-  width: auto;
-  margin: 2rem 0 0 -2rem;
   padding: 2rem 30rem 2rem 0;
   display: flex;
-
   justify-content: space-between;
-
   font-size: 0.8rem;
   background-color: #f2f2f2;
 }
 footer ol {
   list-style-type: none;
-
   line-height: 20px;
 }
 footer a {
@@ -497,7 +469,6 @@ footer a {
 }
 h4 {
   font-size: 0.9rem;
-
   padding-left: 2.5rem;
   padding-bottom: 0%;
 }
