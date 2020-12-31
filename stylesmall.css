@@ -172,6 +172,7 @@ main {
 
 /*section principale */
 .principale {
+  /*inverser populaires et hébergements*/
   display: flex;
   flex-direction: column-reverse;
 }
