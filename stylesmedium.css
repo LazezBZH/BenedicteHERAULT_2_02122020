@@ -132,9 +132,7 @@ button {
 }
 .filtres1 {
   margin-left: 5rem;
-  position: relative;
-  top: 1rem;
-  min-width: auto;
+  margin-top: 2rem;
   border: none;
   color: black;
   font-size: 1.5rem;

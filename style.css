@@ -119,6 +119,7 @@ button {
   height: 2em;
   width: auto;
 }
+
 .sectionfiltres i {
   font-size: 0.8rem;
   position: relative;
@@ -129,13 +130,12 @@ button {
   color: #deebff;
   font-size: 2.3rem;
   position: absolute;
-  top: -0.7rem;
   left: -2.3rem;
+  top: -0.7rem;
 }
 .filtres1 {
   margin-left: 5rem;
-  position: relative;
-  top: 2rem;
+  margin-top: 2.5rem;
   min-width: auto;
   border: none;
   color: black;
@@ -159,7 +159,6 @@ button {
 
   cursor: wait;
   border-radius: 1rem;
-  position: relative;
 }
 
 .filtres:hover {

@@ -17,7 +17,7 @@ p {
   line-height: 1rem;
 }
 body {
-  width: 100%;
+  width: auto;
 }
 
 /*barre navigation*/
@@ -125,14 +125,15 @@ main {
   display: block;
 }
 .filtressmall {
-  width: 99%;
+  width: 98%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
 }
 .filtres1 {
   margin-left: 4rem;
-  margin-top: 0rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 .filtres {
   width: auto;
@@ -150,7 +151,6 @@ main {
 .avert i {
   padding-left: 1rem;
 }
-
 /*section principale */
 .principale {
   /*inverser populaires et hébergements*/
