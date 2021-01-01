@@ -93,46 +93,33 @@ main {
 }
 
 /*zone de recherche*/
+.zonerecherche {
+  display: flex;
+}
 
 .rechercher i {
-  position: absolute;
-
   color: #000;
   background-color: #f2f2f2;
-  padding: 0.7rem 1rem;
+  padding: 0.66rem 1rem;
   border-radius: 1rem 0 0 1rem;
 }
 .rechercher input {
   width: 10rem;
-  height: 2rem;
-  position: relative;
-  left: 2rem;
-  bottom: 0rem;
-  border-color: #f2f2f2;
+  height: 2.1rem;
+  border: solid 0.05rem #f2f2f2;
 }
-.chercher {
-  height: 0rem;
-  background-color: #0065fc;
-  padding: 0;
-  border-radius: 0 1rem 1rem 0;
-  position: relative;
-  left: 1rem;
+#chercher {
+  display: none;
 }
 #loupe {
   display: block;
   font-size: 0.9rem;
   color: white;
   background-color: #0065fc;
+  padding: 0rem;
   border-radius: 0 1rem 1rem 0;
-  position: absolute;
-  bottom: -0.8rem;
 }
 
-#chercher {
-  display: none;
-  font-size: 0rem;
-  color: white;
-}
 /*filtres*/
 .sectionfiltres {
   display: block;
