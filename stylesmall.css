@@ -160,12 +160,12 @@ main {
 .principal2,
 .principal1,
 .principal3 {
-  width: 99%;
+  width: auto;
   padding: 0;
 }
 .principal1 {
   background-color: white;
-  margin-top: 2rem;
+  margin: 2rem 0 0 0;
 }
 .hebtitre {
   padding-left: 0%;
@@ -175,6 +175,7 @@ main {
   background-color: white;
 }
 .hebf {
+  width: 23rem;
   height: 15rem;
   margin-bottom: 1rem;
 }
@@ -190,7 +191,7 @@ main {
   letter-spacing: -0.5px;
 }
 .popf {
-  width: 21rem;
+  width: 20rem;
   height: 8rem;
   display: flex;
   border-radius: 1rem;
@@ -236,11 +237,9 @@ main {
 }
 /*pied de page*/
 footer {
-  width: auto;
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0 2rem 0 0;
+
+  padding: 0 5rem 0 0;
 }
 .apropos {
   display: block;
